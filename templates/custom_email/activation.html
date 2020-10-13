@@ -1,0 +1,24 @@
+{% load i18n %}
+
+{% block subject %}
+{% blocktrans %}スタマチ（Study Matching）アカウント本登録のお願い{% endblocktrans %}
+{% endblock subject %}
+
+{% block text_body %}
+{% blocktrans %}スタマチ（Study Matching）をご利用いただきありがとうございます。{% endblocktrans %}
+
+{% trans "アカウントは仮登録の状態です。ご利用を続けるために、以下のリンクからアカウントを本登録状態にしてください。" %}
+https://studymatchingweb.hufurima.com/{{ url|safe }}
+
+{% blocktrans %}スタマチ開発チーム{% endblocktrans %}
+{% endblock text_body %}
+
+{% block html_body %}
+<p>{% blocktrans %}スタマチ（Study Matching）をご利用いただきありがとうございます。{% endblocktrans %}</p>
+
+<p>{% trans "アカウントは仮登録の状態です。ご利用を続けるために、以下のリンクからアカウントを本登録状態にしてください。" %}</p>
+<p><a href="https://studymatchingweb.hufurima.com/{{ url|safe }}">https://studymatchingweb.hufurima.com/{{ url|safe }}</a></p>
+
+<p>{% blocktrans %}スタマチ開発チーム{% endblocktrans %}</p>
+
+{% endblock html_body %}

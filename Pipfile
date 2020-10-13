@@ -1,0 +1,31 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+
+[packages]
+django = "*"
+djangorestframework = "*"
+gunicorn = "*"
+psycopg2 = "*"
+dj-database-url = "*"
+django-versatileimagefield = "*"
+djangorestframework-simplejwt = "*"
+djoser = "*"
+django-storages = "*"
+boto3 = "*"
+firebase-admin = "*"
+django-bootstrap4 = "*"
+
+[requires]
+python_version = "3.6"
+
+[scripts]
+server = "python3 manage.py runserver"
+mm = "python3 manage.py makemigrations"
+m = "python3 manage.py migrate"
+shell = "python3 manage.py shell"
+test = "python3 manage.py test"

@@ -1,0 +1,17 @@
+{% load i18n %}
+
+{% block subject %}
+{% blocktrans %}スタマチアカウント本登録が完了しました{% endblocktrans %}
+{% endblock %}
+
+{% block text_body %}
+{% trans "あなたのアカウントは正常に本登録が完了しました。アプリを起動してログインしてお使いください。" %}
+
+{% blocktrans %}スタマチ開発チーム{% endblocktrans %}
+{% endblock text_body %}
+
+{% block html_body %}
+<p>{% trans "あなたのアカウントは正常に本登録が完了しました。アプリを起動してログインしてお使いください。" %}</p>
+
+<p>{% blocktrans %}スタマチ開発チーム{% endblocktrans %}</p>
+{% endblock html_body %}
